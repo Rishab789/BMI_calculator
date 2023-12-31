@@ -71,17 +71,20 @@ function calculateBMI() {
     if (age >= 2 && age <= 20 && BMI < 14.5 && female.checked) {
         suggestionText.innerText = "Time to grab a bite!";
         val.innerText = BMI;
+        yellow.appendChild(div);
 
 
 
     } else if (age >= 2 && age <= 20 && BMI >= 14.5 && BMI <= 19 && female.checked) {
         suggestionText.innerText = "Great shape!";
         val.innerText = BMI;
+        green.appendChild(div);
 
     }
     else if (age >= 2 && age <= 20 && BMI > 19 && female.checked) {
         suggestionText.innerText = "Time to run!";
         val.innerText = BMI;
+        orange.appendChild(div);
 
     }
 
@@ -90,8 +93,6 @@ function calculateBMI() {
     if (BMI < 18.5 && age > 20) {
         suggestionText.innerText = "Time to grab a bite!";
         val.innerText = BMI;
-        let div = document.createElement('div')
-        div.classList.add('dot')
         yellow.appendChild(div)
 
 
@@ -99,28 +100,23 @@ function calculateBMI() {
     else if (BMI >= 18.5 && BMI < 24.9 && age > 20) {
         suggestionText.innerText = "Great shape!!";
         val.innerText = BMI;
-        let div = document.createElement('div')
-        div.classList.add('dot')
         green.appendChild(div)
     }
 
     else if (BMI >= 25 && BMI < 29.9 && age > 20) {
         suggestionText.innerText = "Time to run!"
         val.innerText = BMI;
-        let div = document.createElement('div')
-        div.classList.add('dot')
         orange.appendChild(div)
 
     }
     else if (BMI >= 30 && BMI < 35 && age > 20) {
         suggestionText.innerText = "Time to run!";
         val.innerText = BMI;
-        let div = document.createElement('div')
-        div.classList.add('dot')
         red.appendChild(div)
 
 
     }
+
 
 
 
