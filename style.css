@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: var(--text-color)
+}
+
+
+h5 {
+    font-size: 1.3rem;
+    color: var(--text-color)
+}
+
+:root {
+    --text-color: #AE0000;
+    --background-color: #000000;
+    --text-size: 1.125rem;
+    --bg-color: #b9313133;
+
+}
+
+
+#main {
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: #dbdbdb;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem;
+}
+
+.header {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+
+}
+
+.main-container {
+    width: 100%;
+
+}
+
+.input-container {
+
+    display: flex;
+    justify-content: space-around;
+    height: 60%;
+
+
+}
+
+.first-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.second-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.feet-inch input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.feet-inch input:focus {
+    outline: none;
+}
+
+
+.ageDiv {
+    position: relative;
+}
+
+.ageDiv span {
+
+    position: absolute;
+    left: 7rem;
+}
+
+
+
+
+.btn-container {
+    text-align: center;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-container button {
+    font-size: 1rem;
+    padding: .5rem 2.3rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #e77817;
+}
+
+.bmi-indicator {
+    width: 40%;
+    height: 250px;
+    background-color: #dbdbdb;
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.display-val {
+    background-color: var(--bg-color);
+    width: 50%;
+    padding-top: 1rem;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+
+.color-indicators {
+
+    height: 20px;
+    width: 100%;
+    display: flex;
+    gap: 3px;
+    padding: 0 2px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.yellow {
+
+    height: 5px;
+    width: 65px;
+    background-color: yellow;
+    position: relative;
+}
+
+.green {
+
+    height: 5px;
+    width: 80px;
+    background-color: green;
+    position: relative;
+}
+
+.orange {
+    height: 5px;
+    width: 70px;
+    background-color: orange;
+    position: relative;
+}
+
+.red {
+    height: 5px;
+    width: 65px;
+    background-color: red;
+    position: relative;
+}
+
+
+.dot {
+    height: 25px;
+    width: 5px;
+    background-color: #000;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+}
+
+.suggestion p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
+
+
+/* CSS for Radio Button  */
+.radio-btn li {
+    float: left;
+    margin: 0 5px 0 0;
+    width: 100px;
+    height: 40px;
+    position: relative;
+
+}
+
+.radio-btn label,
+.radio-btn input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.radio-btn input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+}
+
+.radio-btn input[type="radio"]:checked+label,
+.Checked+label {
+    border-color: #e77817;
+}
+
+.radio-btn label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    z-index: 90;
+}
+
+.radio-btn label:hover {
+    background: #DDD;
+}
