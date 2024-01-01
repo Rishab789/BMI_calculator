@@ -199,6 +199,26 @@ h5 {
     display: block;
 }
 
+.bmi-meter {
+    position: relative;
+}
+
+.pointer {
+    width: 5px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 3.1rem;
+    right: 9.1rem;
+    z-index: 10;
+    transition: all .8s;
+    overflow: hidden;
+    /* transform: rotate(20deg); */
+
+
+    transform-origin: bottom;
+
+}
 
 /* CSS for Radio Button  */
 .radio-btn li {

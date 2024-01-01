@@ -34,8 +34,7 @@ function calculateBMI() {
 
     let suggestionText = document.querySelector('#suggestion-text');
 
-
-
+    let pnt = document.getElementById("pnt")
 
     //gender is matter specifically for children to teens 
     //beetween the age from 2 to 20
@@ -45,25 +44,27 @@ function calculateBMI() {
         suggestionText.innerText = "Time to grab a bite!";
         val.innerText = BMI;
         yellow.appendChild(div);
+        pnt.style.transform = 'rotate(-70deg)'
+
+
 
     } else if (age >= 2 && age <= 20 && BMI >= 14.75 && BMI <= 19.25 && male.checked) {
         suggestionText.innerText = "Great shape!"
         val.innerText = BMI;
         green.appendChild(div)
+        pnt.style.transform = 'rotate(-20deg)'
     }
     else if (age >= 2 && age <= 20 && BMI > 19.25 && male.checked) {
         suggestionText.innerText = "Time to run!"
         val.innerText = BMI;
         orange.appendChild(div)
+        pnt.style.transform = 'rotate(20deg)'
 
 
 
 
 
     }
-
-
-
 
 
     //For girl Childs
@@ -72,19 +73,21 @@ function calculateBMI() {
         suggestionText.innerText = "Time to grab a bite!";
         val.innerText = BMI;
         yellow.appendChild(div);
-
+        pnt.style.transform = 'rotate(-70deg)'
 
 
     } else if (age >= 2 && age <= 20 && BMI >= 14.5 && BMI <= 19 && female.checked) {
         suggestionText.innerText = "Great shape!";
         val.innerText = BMI;
         green.appendChild(div);
+        pnt.style.transform = 'rotate(-20deg)'
 
     }
     else if (age >= 2 && age <= 20 && BMI > 19 && female.checked) {
         suggestionText.innerText = "Time to run!";
         val.innerText = BMI;
         orange.appendChild(div);
+        pnt.style.transform = 'rotate(20deg)'
 
     }
 
@@ -94,6 +97,7 @@ function calculateBMI() {
         suggestionText.innerText = "Time to grab a bite!";
         val.innerText = BMI;
         yellow.appendChild(div)
+        pnt.style.transform = 'rotate(-70deg)'
 
 
     }
@@ -101,18 +105,24 @@ function calculateBMI() {
         suggestionText.innerText = "Great shape!!";
         val.innerText = BMI;
         green.appendChild(div)
+        pnt.style.transform = 'rotate(-20deg)'
+
     }
 
     else if (BMI >= 25 && BMI < 29.9 && age > 20) {
         suggestionText.innerText = "Time to run!"
         val.innerText = BMI;
         orange.appendChild(div)
+        pnt.style.transform = 'rotate(20deg)'
+
 
     }
     else if (BMI >= 30 && BMI < 35 && age > 20) {
         suggestionText.innerText = "Time to run!";
         val.innerText = BMI;
         red.appendChild(div)
+        pnt.style.transform = 'rotate(60deg)'
+
 
 
     }
